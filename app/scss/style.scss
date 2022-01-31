@@ -1,12 +1,496 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
+.header {
+    padding: 50px 0 55px;
+		&__inner {
+      display: flex;
+      justify-content: space-between;
+		}
+    align-items: center;
+}
+
+.menu {
+    font-size: 15px;
+    
+		&__list {
+      display: flex;
+      align-items: center;
+      height: 100%;
+		}
+
+		&__list-item + .menu__list-item {
+      margin-left: 35px;
+		}
+
+		&__list-link {
+      @extend %DMSans-700;
+      color: #436372 ;
+      text-decoration: none ;
+		}
+}
+
+.user {
+
+		&__nav {
+      display: flex;
+		}
+
+		&__nav-link {
+      position: relative;
+		}
+
+		&__nav-link--search {
+      margin-right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #a3bbc8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+		}
+
+		&__nav-link-box {
+      align-items: center;
+      display: flex;
+      margin-right: 20px;
+      background-color: #fcd7b6;
+      border-radius: 25px ;
+
+		}
+
+		&__nav-link--heart {
+      margin: 0 30px 0 40px ;
+      transform: scale(-1, 1);  
+		}
+
+		&__nav-link-basket {
+      margin: 0 40px 0 30px ;   
+		}
+
+		&__nav-link-menu {
+      width: 50px;
+      height: 50px;
+      background-color:  #a3bbc8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+		}
+
+    &__nav-link--heart::after {
+        content: "";
+        width: 1px;
+        height: 32px;
+        background-color: #fff;
+        top: -9px;
+        right: 49px;
+        position: absolute;
+        cursor: default;
+    }
+
+    &__nav-number--heart, &__nav-number--basket {
+      position: absolute;
+      top: -7px;
+      right: 11px;
+      height: 16px;
+      width: 16px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 16px;
+      @extend %DMSans-500;
+      font-size: 10px;
+    }
+    &__nav-number--basket {
+      top: -7px;
+      right: -9px;    
+    }
+
+}
+
+.footer {
+  
+}
+
+.footer-top {
+    padding: 85px 0 70px;  
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #a3bbc8;
+    
+
+		&__item {
+      font-size: 14px;
+      line-height: 24px;
+      
+    }
+
+    
+
+		&__contact {
+      max-width: 195px;
+      width: 100%;
+      margin-right: 105px;
+		}
+
+		&__logo {
+      margin-top: -10px;
+      margin-bottom: 20px;
+      display: inline-block;
+		}
+
+		&__item-adress {
+      color: #7b7b7b;
+      margin-bottom: 11px;
+      display: inline-block;
+		}
+
+
+
+		&__nav {
+      width: 125px;
+      margin-right: 180px;
+		}
+
+		&__item-title {
+      color: #1f2044;
+      font-size: 16px;
+      margin-bottom: 26px;
+      @extend %DMSans-700;
+      text-transform: uppercase;
+		}
+
+		&__list {
+		}
+
+		&__content-text {
+      margin-bottom: 4px;
+		}
+
+		&__content-link {
+        
+    
+		}
+
+		&__form-subtitle {
+      max-width: 260px;
+      color: #7b7b7b;
+      margin-bottom: 18px;
+
+		}
+
+		&__item-form {
+      display: flex;
+		}
+
+		&__form-input {
+      background-color: #fcd7b6;
+      padding: 8px 0px 10px 8px;
+      border: none;
+      ;  
+		}
+
+    &__form-input::placeholder{
+      color: #234969
+    }
+
+		&__form-btn {
+      color: #fff;
+      padding:  0 10px;
+      border: none;
+      background-color: $accent;
+		}
+}
+
+.footer-bottom {
+    padding: 38px 0 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+	
+		&__nav-list {
+      display: flex;
+		}
+
+		&__nav-item {
+      padding: 0 15px ;
+		}
+    &__nav-item + .footer-bottom__nav-item {
+      border-left: 1px solid #7b7b7b;
+    }
+
+}
+
+
+
+.top-slider {
+
+    padding: 204px 0 45px;
+    background-color: #fcd7b6;
+    background-image: url('../images/slider-bg.png');
+    background-repeat: no-repeat;
+    background-position: 82% center;
+    
+    
+
+		&__item {
+      display: flex !important;
+      justify-content: space-between;
+
+		}
+
+
+		&__title {
+      color: $title;
+      font-size: 72px;
+      line-height: 70px;
+      max-width: 410px;
+      margin-bottom: 25px;
+    }
+
+		&__text {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 360px;
+		}
+
+		&__link {
+      padding: 25px 20px 21px 27px;
+      color: #fff;
+      background-color: $accent;
+      display: flex;
+
+      max-width: 200px;
+		}
+
+    &__link-img {
+      margin-left: auto
+    }
+
+		&__img {
+      
+      margin-top: auto
+		}
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 205px;
+
+      li {
+        
+        
+        button {
+          font-size: 11px;
+          height: 30px;
+          width: 30px;
+          padding: 0;
+          border-radius: 50%;
+          border: none;
+          background-color: #fde3cc;
+          margin-left: 11px;
+        }
+        
+        
+
+      }
+      .slick-active  {
+
+          button {background-color: #fff;}
+        }
+    }
+    
+   
+}
+
+.benefits {
+    height: 170px;
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+		&__item {
+      padding: 0 150px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 16px;  
+		}
+    
+    &__item + .benefits__item {
+      border-left: 1px solid #e8e4df  ;
+      
+      
+      
+    }
+
+
+
+		&__item-img {
+      margin-right: 25px;
+		}
+
+		&__item-content {
+      
+      max-width: 210px;
+		}
+
+    &__item-text--full{
+      max-width: 220px; 
+    }
+
+		&__item-title {
+      font-size: 18px;
+      line-height: 40px;
+      color: #414141;
+      @extend %DMSans-700;
+
+		}
+
+		&__item-text {
+      line-height: 30px;
+		}
+}
+
+.products {
+    padding: 75px 0 185px;
+
+
+		&__title {
+      margin-bottom: 40px;
+		}
+
+		&__btn {
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center;
+		}
+
+		&__btn-item {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      color :#8b8b8b;
+      @extend %DMSans-700;
+      cursor: pointer;
+
+		}
+
+    &__btn-item + .products__btn-item {
+      margin-left: 30px;
+    }
+
+		&__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 40px 30px ;  
+		}
+
+		&__item {
+      @extend %DMSans-700;
+      text-align: center;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      max-width: 280px;
+      min-height: 380px;
+		}
+
+    &__item:hover {
+      .products-item__link-box {
+        transform: translateY(0);
+
+      }
+    }
+
+    
+
+    &-item__img-box {
+      height: 290px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+		&__item-img {
+      object-fit: cover;
+      
+     } 
+
+		&__item-name {
+      
+      line-height: 40px;
+      font-size: 16px;
+      color: $title;
+
+		}
+
+		&__item-price {
+      color: $accent;
+      margin-bottom: 25px;
+		}
+
+    &-item__link-box {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      transition: all .3s;
+      transform: translateY(300%);
+
+
+
+    }
+
+    &-item__box-link{
+      transition: all .3s;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      background-color: #fff;
+      border-radius: 50%;
+      
+      
+    }
+
+     &-item__box-link:hover,
+     &-item__box-link:active {
+        background-color: $accent;
+        path {
+          fill: #ffffff;
+        }
+
+      }
+
+    &-item__box-link + .products-item__box-link {
+      margin-left: 16px;
+    }
+}
+
+.container {
+}
+.title {
+}
 
 
 
 
 
-@import 'media';
+
+
+
+
+@import 'media' ;
