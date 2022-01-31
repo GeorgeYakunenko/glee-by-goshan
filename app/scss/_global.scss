@@ -25,6 +25,25 @@ a {
   text-align: center;
   @extend %DMSans-700;
 }
+
+.button-box {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-box__btn {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      color :#8b8b8b;
+      @extend %DMSans-700;
+      cursor: pointer;
+}
+
+.button-box__btn + .button-box__btn {
+  margin-left: 30px;
+}
   
 
 
