@@ -180,18 +180,18 @@
       </div>
       </div>
 
-      <section class="products">
+      <section class="products" data-ref="container-1">
         <div class="container">
           <h3 class="title products__title">Products of the week</h3>
           <div class="products__btn button-box">
-            <button class="products__btn-item button-box__btn" data-filter=''>All</button>
-            <button class="products__btn-item button-box__btn" data-filter=''>Furnitures</button>
-            <button class="products__btn-item button-box__btn" data-filter=''>Chairs</button>
-            <button class="products__btn-item button-box__btn" data-filter=''>Lighting</button>
-            <button class="products__btn-item button-box__btn" data-filter=''>Decor</button>
+            <button class="products__btn-item button-box__btn" data-filter='all'>All</button>
+            <button class="products__btn-item button-box__btn" data-filter='.furnitures'>Furnitures</button>
+            <button class="products__btn-item button-box__btn" data-filter='.chairs'>Chairs</button>
+            <button class="products__btn-item button-box__btn" data-filter='.lighting'>Lighting</button>
+            <button class="products__btn-item button-box__btn" data-filter='.decor'>Decor</button>
           </div>
           <div class="products__items">
-            <div class="products__item">
+            <div class="products__item mix chairs">
               <div class="products-item__img-box"> 
                <img class="products__item-img" src="images/products/1.png" alt="product">
                  <div class="products-item__link-box">
@@ -225,7 +225,7 @@
               <p class="products__item-price">$29.00</p>
              
             </div>
-            <div class="products__item">
+            <div class="products__item mix chairs">
              <div class="products-item__img-box">
                 <img class="products__item-img" src="images/products/2.png" alt="product">
                 <div class="products-item__link-box">
@@ -258,7 +258,7 @@
               <a class="products__item-link" href="#"> <h5 class="products__item-name">Wooden chair</h5> </a>
               <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix furnitures">
              <div class="products-item__img-box">
                 <img class="products__item-img" src="images/products/3.png" alt="product">
                 <div class="products-item__link-box">
@@ -291,7 +291,7 @@
                <a class="products__item-link" href="#"><h5 class="products__item-name">White chair</h5> </a>
               <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix chairs">
              <div class="products-item__img-box">
                 <img class="products__item-img" src="images/products/4.png" alt="product">
                 <div class="products-item__link-box">
@@ -324,7 +324,7 @@
               <a class="products__item-link" href="#"> <h5 class="products__item-name">Retro table</h5> </a>
               <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix chairs">
              <div class="products-item__img-box"> 
                <img class="products__item-img" src="images/products/5.png" alt="product">
                <div class="products-item__link-box">
@@ -357,7 +357,7 @@
                 <a class="products__item-link" href="#"> <h5 class="products__item-name">Wooden radio</h5></a>
               <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix lighting">
              <div class="products-item__img-box">
                 <img class="products__item-img" src="images/products/6.png" alt="product">
                 <div class="products-item__link-box">
@@ -390,7 +390,7 @@
               <a class="products__item-link" href="#"><h5 class="products__item-name">Wooden chair</h5> </a>
               <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix decor">
              <div class="products-item__img-box"> 
                <img class="products__item-img" src="images/products/7.png" alt="product">
                <div class="products-item__link-box">
@@ -423,7 +423,7 @@
                <a class="products__item-link" href="#"> <h5 class="products__item-name">Wooden chair</h5></a>
                 <p class="products__item-price">$29.00</p>
             </div>
-            <div class="products__item">
+            <div class="products__item mix lighting">
              <div class="products-item__img-box">
                 <img class="products__item-img" src="images/products/8.png" alt="product">
                 <div class="products-item__link-box">
@@ -483,18 +483,18 @@
           </div>
         </div>
       </section>
-      <section class="designe">
+      <section class="designe" data-ref="container-2">
         <div class="container">
           <h3 class="title designe__title">New Design</h3>
           <div class="designe__btn button-box">
-            <button class="designe__btn-item button-box__btn" data-filter=''>All</button>
-            <button class="designe__btn-item button-box__btn" data-filter=''>Furnitures</button>
-            <button class="designe__btn-item button-box__btn" data-filter=''>Chairs</button>
-            <button class="designe__btn-item button-box__btn" data-filter=''>Lighting</button>
-            <button class="designe__btn-item button-box__btn" data-filter=''>Decor</button>
+            <button type="button" class="designe__btn-item button-box__btn" data-filter="all">All</button>
+            <button type="button" class="designe__btn-item button-box__btn" data-filter=".furnitures" >Furnitures</button>
+            <button type="button" class="designe__btn-item button-box__btn" data-filter=".chairs" >Chairs</button>
+            <button type="button" class="designe__btn-item button-box__btn" data-filter=".lighting" >Lighting</button>
+            <button type="button" class="designe__btn-item button-box__btn" data-filter=".decor" >Decor</button>
           </div>
           <div class="designe-items">
-            <div class="designe-item "
+            <div class="designe-item mix chairs" 
                   style="  background-image: url('images/designe/1.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -503,7 +503,7 @@
                 <p class="designe-item__text">Classic</p>
               </div>
             </div>
-            <div class="designe-item "
+            <div class="designe-item mix decor" 
                   style="  background-image: url('images/designe/2.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -512,7 +512,7 @@
                 <p class="designe-item__text">Classic</p>
               </div>
             </div>
-            <div class="designe-item "
+            <div class="designe-item mix furnitures"
                   style="  background-image: url('images/designe/3.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -521,7 +521,7 @@
                 <p class="designe-item__text">Classic</p>
               </div>
             </div>
-            <div class="designe-item "
+            <div class="designe-item mix furnitures"
                   style="  background-image: url('images/designe/4.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -530,7 +530,7 @@
                 <p class="designe-item__text">Classic</p>
               </div>
             </div>
-            <div class="designe-item "
+            <div class="designe-item mix chairs"
                   style="  background-image: url('images/designe/5.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -539,7 +539,7 @@
                 <p class="designe-item__text">Classic</p>
               </div>
             </div>
-            <div class="designe-item "
+            <div class="designe-item mix lighting"
                   style="  background-image: url('images/designe/6.jpg');" >
               <div class="designe-item__content-box">
                 <a class="designe-item__link">
@@ -552,7 +552,7 @@
         </div>
       </section>
       <div class="design-video">
-        <a class="design-video__link" href="#">
+        <a class="design-video__link" data-fancybox href="https://www.youtube.com/watch?v=uyg0owd1cC4">
           <img class="design-video__img" src="images/icons/video-play.svg" alt="">
         </a>
       </div>
