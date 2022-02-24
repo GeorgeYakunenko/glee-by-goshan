@@ -45,8 +45,56 @@ a {
   margin-left: 30px;
 }
   
+.mixitup-control-active {
+  color: $default-black;
+}
 
 
+
+.top {
+  padding: 32px 0 ;
+  text-align: center;
+  background-color: #edf1f4;
+
+}
+.breadcrumbs {
+    
+		&__title {
+      font-size: 36px;
+      @extend %DMSans-500;
+      color: #222933;
+      margin-bottom: 5px;
+		}
+
+		&__items {
+      display: flex;
+      justify-content: center;
+		}
+
+		&__item {
+      position: relative;
+      padding: 0 10px;
+      color: #94999f;
+      position: relative;
+      &::after {
+        position: absolute;
+        right: -4px;
+        content: '/';
+      }
+      
+		}
+
+    &__item:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+
+		&__link {
+      color: inherit;
+		}
+}
 
 
 

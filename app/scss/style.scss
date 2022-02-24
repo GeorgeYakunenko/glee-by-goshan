@@ -697,6 +697,72 @@
   
 }
 
+.partners--marginnone {
+  margin-top: 0px;
+  padding: 80px 0 80px 0;  
+}
+
+.modal {
+    padding: 120px 0;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+
+		&__label {
+     
+		}
+
+		&__input {
+       display: block;
+       width: 100%;
+       margin-bottom: 25px;
+       margin-top: 10px;
+       height: 60px;
+       border: 1px solid #f6f6f6;
+       padding: 0 15px;
+
+		}
+
+		&__btn {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      border: none;
+      color: #fff;
+      background-color: $accent;
+      width: 100%;
+      cursor: pointer;
+		}
+
+		&__text {
+      text-align: center;
+      padding: 25px 0;
+		}
+
+		&__create-link {
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      border: 2px solid $accent;
+      color: #243f4d;
+		}
+    &__form {
+
+    }
+    &__box {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #f6f6f6;
+
+    }
+}
+
+
+
+
+
 
 
 
