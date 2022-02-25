@@ -759,6 +759,41 @@
     }
 }
 
+.terms {
+    padding: 40px 0 120px;
+
+		&__title {
+      font-size: 24px;
+      color: $title;
+      margin-bottom: 22px;
+      @extend %Rubik-400;
+      margin-top: 80px;
+		}
+
+    &__title--bold {
+      margin-top: 75px;
+      font-size: 24px;
+      color: $title;
+      margin-bottom: 22px;
+    }
+
+		&__list {
+      list-style-type: decimal-leading-zero;
+      padding-left: 35px;
+		}
+
+		&__list-item {
+      line-height: 30px;
+      margin-bottom: 10px;
+      color: $title;
+		}
+
+		&__text {
+      line-height: 30px;
+		}
+}
+.container {
+}
 
 
 

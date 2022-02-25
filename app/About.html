@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogInByGosha</title>
+    <title>AboutUsByGosha</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header header--white">
+    <header class="header">
       <div class="containerbig">
         <div class="header__inner">
           <a class="logo" href="#">
@@ -67,49 +67,74 @@
     </header>
     <main class="main">
       <section class="top">
-          <h2 class="breadcrumbs__title">Log in</h2>
+          <h2 class="breadcrumbs__title">About Us</h2>
             <div class="breadcrumbs">
               <ul class="breadcrumbs__items">
                 <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link" href="#">Home</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">Log in</a>
+                  <a class="breadcrumbs__link" href="#">About Us</a>
                 </li>
               </ul>
             </div>  
       </section>
-      <section class="modal">
+      
+      <section class="articles">
         <div class="container">
-          <form class="modal__form" action="#">
-            <label class="modal__label" >
-              Username or email address *
-              <input class="modal__input" type="text" required>
-            </label>
-            <label class="modal__label" >
-              Password *
-              <input class="modal__input" type="password" required>
-            </label>  
-              <button class="modal__btn" type="submit">Login</button>
-              <div class="modal__box">
-                <label class="modal__label" >
-                  <input  type="checkbox">
-                  Remember me
-                </label>
-                <a href="#">Lost your password?</a>
+          <div class="articles__top">
+            <h3 class="articles__top-title">Our Insights & Articles</h3>
+            <a class="articles__top-link" href="#">View All</a>
+          </div>
+          <div class="articles-items">
+            <div class="articles-item">
+              <img class="articles-item__img" src="images/articles/1.jpg" alt="">
+              <span class="articles-item__type">NEWS</span>
+              <a class="articles-item__link" href="#">
+                <p class="articles-item__text">
+                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </a>
+              <div class="articles-item__bottom">
+                <p class="articles-item__date">28 JANUARY, 2020</p>
+                <a class="articles-item__author-link" href="#">
+                  <p class="articles-item__author">BY ADMIN</p>
+                </a>
               </div>
-              
-              <p class="modal__text">
-                Not registered? No problem
-              </p>
-              <a class="modal__create-link" href="#">Create an account</a>
-            
-          </form>
+            </div>
+            <div class="articles-item">
+              <img class="articles-item__img" src="images/articles/2.jpg" alt="">
+              <span class="articles-item__type">NEWS</span>
+              <a class="articles-item__link" href="#">
+                <p class="articles-item__text">
+                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                </p>
+              </a>
+              <div class="articles-item__bottom">
+                <p class="articles-item__date">28 JANUARY, 2020</p>
+                <a class="articles-item__author-link" href="#">
+                  <p class="articles-item__author">BY ADMIN</p>
+                </a>
+              </div>
+            </div>
+            <div class="articles-item">
+              <img class="articles-item__img" src="images/articles/3.jpg" alt="">
+              <span class="articles-item__type">NEWS</span>
+              <a class="articles-item__link" href="#">
+                <p class="articles-item__text">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim 
+                </p>
+              </a>
+              <div class="articles-item__bottom">
+                <p class="articles-item__date">28 JANUARY, 2020</p>
+                <a class="articles-item__author-link" href="#">
+                  <p class="articles-item__author">BY ADMIN</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-
-
-      <div class="partners partners--marginnone">
+        <div class="partners">
           <div class="container">
            <div class="partners__inner">
               <div class="partners-item"><img class="partners-item__img" src="images/articles/partner-1.png" alt=""></div>
@@ -119,8 +144,8 @@
               <div class="partners-item"><img class="partners-item__img" src="images/articles/partner-5.png" alt=""></div>
            </div>
           </div>
-      </div>
-      
+        </div>
+      </section> 
 
     </main>
     <footer class="footer">
