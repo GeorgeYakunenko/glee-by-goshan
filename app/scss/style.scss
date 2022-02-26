@@ -792,8 +792,229 @@
       line-height: 30px;
 		}
 }
+
+.mission {
+    padding: 120px 0;
+
+		&__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+
+		&__content {
+      max-width: 570px;
+		}
+
+		&__year-num {
+      display: inline-block;
+      font-size: 140px;
+      color: $accent;
+      @extend %Rubik-700;
+      margin-right: 20px;
+		}
+
+		&__year-text {
+      display: inline-block;
+      max-width: 100px;
+      line-height: 30px;
+		}
+
+		&__title {
+      font-size: 36px;
+      color: $title;
+      margin-bottom: 50px;
+		}
+
+		&__text {
+      line-height: 30px;
+      padding-bottom: 55px;
+      border-bottom: 2px solid #ebeef3;
+		}
+
+		&__statistic {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+		}
+
+		&__statistic-item {
+      
+      display: flex;
+		}
+
+    &__statistic-item + .mission__statistic-item {
+      padding: 0 25px ;
+      border-left: 1px solid #e6eaf0;
+    }
+
+		&__statistic-img {
+      margin-right: 15px;
+		}
+
+		&__statistic-box {
+		}
+
+		&__statistic-num {
+      color: $title;
+      font-size: 36px;
+		}
+
+		&__statistic-text {
+      color: #585858;
+      @extend %DMSans-700
+		}
+}
+
+.about-statistic {
+    padding: 85px 0 80px;
+    background-color: #fcd7b6;
+
+		&__items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+		}
+
+		&__item {
+      max-width: 175px;
+      text-align: center;
+  
+      
+		}
+
+		&__img {
+      display: inline-block;
+     
+    }
+		&__num {
+      margin-top: 18px;
+      font-size: 36px;
+      line-height: 32px;
+      color: $title;
+      margin-bottom: 16px;
+		}
+
+    &__num--product{
+      margin-top: 36px;
+    }
+
+    
+
+		&__text {
+      color: $title;
+      @extend %Rubik-500;
+		}
+}
+
+.team {
+    padding: 120px 0 0;
+
+		&__inner {
+      display: flex;
+      justify-content: space-between;
+		}
+
+		&__info {
+
+      max-width: 300px;
+		}
+
+		&__info-title {
+      font-size: 36px;
+      color: $title;
+      margin-bottom: 35px;
+      margin-left: -3px;
+		}
+
+		&__info-text {
+      line-height: 30px;
+      color: $title;
+      margin-bottom: 60px;
+		}
+
+		&__info-link {
+      color: white;
+      background-color: $accent;
+      padding: 20px 65px 20px 25px ;
+      border-radius: 5px;
+      position: relative;
+		}
+
+    &__info-link::after {
+      content: '';
+      background-image: url('../images/about/arrow.svg');
+      width: 15px;
+      height: 11px;
+      position: absolute;
+      right: 25px;
+      top: 24px;
+    }
+
+
+		&__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 40px 30px;
+		}
+
+		&__item {
+		}
+
+		&__item-img {
+		}
+
+		&__item-box {
+      margin-top: -50px;
+      position: relative;
+      padding: 25px 0;
+      z-index: 10;
+      background-color: #fff;
+      max-width: 325px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+		}
+
+
+		&__item-employee {
+		}
+
+		&__item-name {
+      color: #436372;
+      font-size: 22px;
+      margin-bottom: 15px;
+		}
+
+		&__item-position {
+		}
+
+		&__item-social {
+      display: flex;
+		}
+
+		&__item-instagram,&__item-google {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+		}
+
+    &__item-instagram {
+      margin-right: 7px;
+    }
+
+		
+}
 .container {
 }
+
 
 
 
