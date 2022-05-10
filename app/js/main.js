@@ -1,4 +1,32 @@
 $ (function(){
+  
+
+  $(".recent-item__stars").rateYo({
+    rating: 4,
+    starWidth: "11px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "6px",
+  });
+  
+  
+
+
+  $(".filter-price__slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        grid: true,
+        prefix: "$",
+         onChange: function (data) {
+            $(".filter-price__from").text(data.from);
+            $(".filter-price__to").text(data.to);   
+        },
+    });
+
 
   $('.top-slider__inner').slick({
     dots: true,
@@ -7,6 +35,8 @@ $ (function(){
     autoplay:true,
     autoplaySpeed: 3000,
   });
+
+  
 
   
   
