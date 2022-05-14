@@ -931,8 +931,6 @@
     display: flex;
     margin-bottom: 100px;
   }
-
-  &__filters {}
 }
 
 
@@ -1075,8 +1073,7 @@
     display: flex;
     width: 100%;
     cursor: pointer;
-    margin-bottom: 3px;
-    
+    margin-bottom: 3px;  
   }
 
   &__label-input {
@@ -1096,32 +1093,16 @@
     border-radius: 5px;
   }
 
-  &__label-text {
-
-  }
-
-  &__label-number {}
-}
-
-.filter-recent {
-
-}
-
-.recent-items {
-
 }
 
 .recent-item {
   margin-bottom: 22px;
   display: flex;
   
-
   &__link {
     margin-right: 25px;
     margin-left: 3px;
   }
-
-  &__img {}
 
   &__box {
     padding-right: 20px;
@@ -1136,14 +1117,10 @@
     
   }
 
-  
-
   &__stars {
     margin-left: -5px;
     margin-bottom: 8px;
   }
-
-  &__price {}
 }
 
 .shop-items {
@@ -1152,12 +1129,238 @@
   grid-template-columns: 1fr 1fr 1fr ;
 }
 
+.product-page {
+  padding-top: 120px;
+}
 
 
+.product-one {
 
+  &__inner {
+    display: flex;
+  }
 
+  &__slide {
+    width: 550px;
+  }
 
+  &__content {
+    width: 540px;
+    padding-top: 20px;
+  }
 
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: $title;
+    @extend %Rubik-400;
+  }
+
+  &__star {
+    margin-left: -5px;
+    margin-bottom: 35px;
+  }
+
+  &__price {
+    font-size: 30px;
+    color: $title;
+    @extend %Rubik-400;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    max-width: 530px;
+    color: $title;
+    margin-bottom: 40px;
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    padding: 15px 40px;
+    background-color: #a3bbc8;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__info-item {
+    display: flex;
+    margin-bottom: 5px;
+    color: $title;;
+  }
+
+  &__info-title {
+    margin-right: 3px;
+  }
+
+  &__info-link {
+    color: $title;
+    cursor: pointer;
+  }
+}
+
+.product-slider {
+  width: 550px;
+  overflow: hidden;
+  margin-right: 40px;
+  display: flex;
+  &__thumb {
+    width: 140px; 
+    margin-right: 20px; 
+  }
+
+  &__thumb-item {
+    width: 140px;
+    height: 160px;
+    margin-bottom: 17px;
+  }
+
+  &__thumb-img {
+    border: 1px solid #f2f2f2;
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  &__big-item {
+    margin-top: -3px;
+    height: 530px;
+    width: 390px;
+    
+  }
+
+  &__big-img {
+    height: 530px;
+    margin-top: 3px;
+  }
+}
+
+.slick-list {
+  height: 530px;
+}
+
+.input-number {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #a3bbc8;
+  color: #5c5c5c;
+  font-size: 15px;
+  text-align: center;
+  width: calc(50px * 3);
+  margin-right: 15px;
+}
+
+.input-number__input {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 8px;
+  border: 1px solid #a3bbc8;
+  text-align: center;
+}
+
+.input-number__minus,
+.input-number__plus {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #a3bbc8;
+}
+
+.product-tabs {
+  margin-bottom: 115px;
+  margin-top: 100px;
+  &__top {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__top-item {
+    padding: 15px 75px;
+    border-radius: 5px;
+    display: inline-block;
+    color: $title;
+    background-color: #edf1f4; 
+    & + .product-tabs__top-item {
+      margin-left: 15px;
+    }
+  }
+
+  &__top-item--active {
+    color: #fff;
+    background-color: $accent;
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item--active {
+    display: block;
+  }
+
+}
+
+.related {
+
+  &__items {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: left;
+    color: $title;
+    font-size: 36px;
+  }
+
+  .slick-list {
+    height: 380px;
+  }
+
+  button.slick-arrow {
+    top: -95px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #edf1f4; 
+    background-color: #fff;
+  }
+
+  button.slick-next.slick-arrow {
+    position: absolute;
+    right: 20px;
+    background-image: url('../images/icons/arrow-slide-right.svg');
+    &:hover {
+      border: 1px solid $accent;
+    }  
+  }
+  button.slick-prev.slick-arrow {
+    position: absolute; 
+    right: 80px;
+    background-image: url('../images/icons/arrow-left.svg');
+    &:hover {
+      border: 1px solid $accent;
+    }  
+  }
+}
 
 
 

@@ -1,6 +1,16 @@
 $ (function(){
   
 
+  $('.product-tabs__top-item').on('click', function(e){
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+    
+    $('.product-tabs__item').removeClass('product-tabs__item--active');
+    $($(this).attr('href')).addClass('product-tabs__item--active');
+  });
+
+
   $(".recent-item__stars").rateYo({
     rating: 4,
     starWidth: "11px",
@@ -9,7 +19,55 @@ $ (function(){
     readOnly: true,
     spacing: "6px",
   });
+
+  $(".product-one__star").rateYo({
+    rating: 4,
+    starWidth: "17px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "6px",
+  });
   
+  // кнопки 
+   $(document).on('click', '.input-number__minus', function () {
+        let total = $(this).next();
+        if (total.val() > 1) {
+            total.val(+total.val() - 1);
+        }
+    });
+    
+    $(document).on('click', '.input-number__plus', function () {
+        let total = $(this).prev();
+        total.val(+total.val() + 1);
+    });
+    
+    document.querySelectorAll('.input-number__input').forEach(function (el) {
+        el.addEventListener('input', function () {
+            this.value = this.value.replace(/[^\d]/g, '');
+        });
+    });
+
+
+  $('.product-slider__thumb').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  focusOnSelect: true,
+  vertical: true,
+  draggable:false,
+  asNavFor: '.product-slider__big'
+  });
+
+$('.product-slider__big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: false,
+  arrows: false,
+  fade: true,
+  asNavFor: '.product-slider__thumb',
+  
+  });
   
 
 
@@ -34,6 +92,13 @@ $ (function(){
     fade:true,
     autoplay:true,
     autoplaySpeed: 3000,
+  });
+
+  $('.related__items').slick({
+    arrows: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1
   });
 
   
