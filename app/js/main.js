@@ -1,5 +1,25 @@
+
+$(document).ready(function () {
+  //Для липкого меню
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 90) {
+      $(".header__inner").addClass("fix");
+    } else {
+      $(".header__inner").removeClass("fix");
+    }
+  });
+  //конец липкого меню
+});
+
+
 $ (function(){
   
+  $(".user__nav-link-menu").on("click", function () {
+    $(".menu__list").toggleClass("menu__list--active");
+  });
+
+  
+
 
   $('.product-tabs__top-item').on('click', function(e){
     e.preventDefault();
@@ -497,3 +517,6 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+
