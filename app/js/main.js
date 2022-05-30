@@ -18,9 +18,6 @@ $ (function(){
     $(".menu__list").toggleClass("menu__list--active");
   });
 
-  
-
-
   $('.product-tabs__top-item').on('click', function(e){
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -29,7 +26,6 @@ $ (function(){
     $('.product-tabs__item').removeClass('product-tabs__item--active');
     $($(this).attr('href')).addClass('product-tabs__item--active');
   });
-
 
   $(".recent-item__stars").rateYo({
     rating: 4,
@@ -79,18 +75,24 @@ $ (function(){
   asNavFor: '.product-slider__big'
   });
 
-$('.product-slider__big').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: false,
-  arrows: false,
-  fade: true,
-  asNavFor: '.product-slider__thumb',
-  
+  $(".product-slider__big").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: false,
+    arrows: false,
+    fade: true,
+    asNavFor: ".product-slider__thumb",
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          autoplay: true,
+          draggable: false,
+        },
+      },
+    ],
   });
   
-
-
   $(".filter-price__slider").ionRangeSlider({
         type: "double",
         min: 0,
@@ -105,7 +107,6 @@ $('.product-slider__big').slick({
         },
     });
 
-
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
@@ -114,14 +115,40 @@ $('.product-slider__big').slick({
     autoplaySpeed: 3000,
   });
 
-  $('.related__items').slick({
+  $(".related__items").slick({
     arrows: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
-  
+  $(".shop__filter-btn").on('click', function () {
+    $(".shop__filters").toggleClass("shop__filters--active");
+  });
 
   
   

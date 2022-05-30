@@ -7,13 +7,11 @@
 
 .header {
   padding: 50px 0 55px;
-
+  align-items: center;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
-
-  align-items: center;
 }
 
 .menu {
@@ -21,7 +19,6 @@
 
   &__btn {
     display: none;
-
   }
 
   &__list {
@@ -42,7 +39,6 @@
 }
 
 .user {
-
   &__nav {
     display: flex;
   }
@@ -121,7 +117,6 @@
     top: -7px;
     right: -9px;
   }
-
 }
 
 .footer-top {
@@ -216,7 +211,6 @@
   &__nav-item+.footer-bottom__nav-item {
     border-left: 1px solid #7b7b7b;
   }
-
 }
 
 .top-slider {
@@ -231,7 +225,6 @@
   &__item {
     display: flex !important;
     justify-content: space-between;
-
   }
 
   .slick-list {
@@ -258,7 +251,6 @@
     color: #fff;
     background-color: $accent;
     display: flex;
-
     max-width: 200px;
   }
 
@@ -270,8 +262,6 @@
     margin-top: auto
   }
 
-
-
   .slick-dots {
     display: flex;
     align-items: center;
@@ -279,7 +269,6 @@
     margin-top: 205px;
 
     li {
-
       button {
         font-size: 11px;
         height: 30px;
@@ -290,7 +279,6 @@
         background-color: #fde3cc;
         margin-left: 11px;
       }
-
     }
 
     .slick-active {
@@ -299,7 +287,6 @@
       }
     }
   }
-
 }
 
 .benefits {
@@ -368,7 +355,6 @@
   &__item:hover {
     .products-item__link-box {
       transform: translateY(0);
-
     }
   }
 
@@ -427,7 +413,6 @@
     path {
       fill: #ffffff;
     }
-
   }
 
   &-item__box-link+.products-item__box-link {
@@ -436,7 +421,6 @@
 }
 
 .distribution {
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -508,7 +492,6 @@
     margin-bottom: 28px;
   }
 }
-
 
 .designe-items {
   display: grid;
@@ -585,7 +568,6 @@
       position: absolute;
       top: 5px;
       left: 79px;
-
     }
   }
 }
@@ -658,7 +640,6 @@
     display: flex;
     justify-content: space-around;
   }
-
 }
 
 .partners--marginnone {
@@ -712,7 +693,6 @@
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #f6f6f6;
-
   }
 }
 
@@ -796,7 +776,6 @@
   }
 
   &__statistic-item {
-
     display: flex;
   }
 
@@ -900,7 +879,6 @@
     top: 24px;
   }
 
-
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -946,7 +924,6 @@
   &__item-instagram {
     margin-right: 7px;
   }
-
 }
 
 .shop {
@@ -957,15 +934,20 @@
     display: flex;
     margin-bottom: 100px;
   }
+
+  &__filter-btn {
+    display: none;
+  }
+
+  &__filters {
+    transition: all .3s;
+  }
 }
-
-
 
 .filter {
   max-width: 270px;
   width: 100%;
   margin-right: 30px;
-
 }
 
 .filter-category {
@@ -976,7 +958,6 @@
     width: 100%;
     cursor: pointer;
     border-radius: 5px;
-
   }
 
   &__input {
@@ -993,10 +974,7 @@
     justify-content: space-between;
     width: 100%;
   }
-
 }
-
-
 
 .filter-title {
   font-size: 18px;
@@ -1025,7 +1003,6 @@
 }
 
 .irs--flat .irs-handle:hover {
-
   background-color: #a3bbc8;
 }
 
@@ -1051,7 +1028,6 @@
 .irs--flat.irs-with-grid {
   height: 54px;
 }
-
 
 .irs--flat .irs-bar {
   top: 25px;
@@ -1095,7 +1071,6 @@
 }
 
 .filter-brand {
-
   &__form {
     margin-bottom: 55px;
   }
@@ -1123,7 +1098,6 @@
     padding: 10px 15px;
     border-radius: 5px;
   }
-
 }
 
 .recent-item {
@@ -1163,9 +1137,7 @@
   padding-top: 120px;
 }
 
-
 .product-one {
-
   &__inner {
     display: flex;
   }
@@ -1189,6 +1161,7 @@
   &__star {
     margin-left: -5px;
     margin-bottom: 35px;
+    z-index: 1;
   }
 
   &__price {
@@ -1281,7 +1254,6 @@
   display: flex;
   align-items: center;
   background: #FFFFFF;
-  border: 1px solid #a3bbc8;
   color: #5c5c5c;
   font-size: 15px;
   text-align: center;
@@ -1328,7 +1300,7 @@
     color: $title;
     background-color: #edf1f4;
 
-    &+.product-tabs__top-item {
+    & + .product-tabs__top-item {
       margin-left: 15px;
     }
   }
@@ -1345,11 +1317,9 @@
   &__item--active {
     display: block;
   }
-
 }
 
 .related {
-
   &__items {
     position: relative;
   }
@@ -1397,7 +1367,6 @@
     }
   }
 }
-
 
 .filter-search {
   margin-bottom: 50px;
@@ -1580,7 +1549,6 @@
 }
 
 .blog-one {
-
   &__img-left {
     margin-right: 25px;
     float: left;
@@ -1736,7 +1704,6 @@
 }
 
 .comments {
-
   &__form--title {
     font-size: 24px;
     margin-bottom: 40px;
@@ -1767,7 +1734,6 @@
     background-image: url('../images/icons/form-email.svg');
   }
 
-
   &__form-textarea {
     height: 120px;
     display: block;
@@ -1780,12 +1746,11 @@
     background-image: url('../images/icons/form-text.svg');
     background-repeat: no-repeat;
     background-position: top 20px right 20px;
+    margin-bottom: 40px;
 
     &:focus {
       border: 1px solid $accent;
     }
-
-    margin-bottom: 40px;
   }
 
   &__form-btn {
@@ -1910,11 +1875,6 @@
   left: 0;
   right: 0;
 }
-
-
-
-
-
 
 
 

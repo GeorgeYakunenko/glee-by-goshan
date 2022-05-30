@@ -61,8 +61,6 @@ a {
   color: $default-black;
 }
 
-
-
 .top {
   padding: 32px 0;
   text-align: center;
@@ -71,7 +69,6 @@ a {
 }
 
 .breadcrumbs {
-
   &__title {
     font-size: 36px;
     @extend %DMSans-500;
@@ -96,7 +93,6 @@ a {
       right: -4px;
       content: '/';
     }
-
   }
 
   &__item:last-child {
